@@ -4,11 +4,7 @@ import re
 
 my_login = input('Введите свой логин или введите STANDART:\n')
 user_name = input('Введите username профиля, пример в фигурных скобках (https://www.instagram.com/{kendalljenner}):\n')
-if my_login.upper() == 'STANDART':
-    my_login = 'bandertechno'
-    my_password = 'banderatechno1'
-else:
-    my_password = input('Введите пароль от вашего аккаунта:\n')
+my_password = input('Введите пароль от вашего аккаунта:\n')
 
 load = instaloader.Instaloader()
 load.login(my_login, my_password)
